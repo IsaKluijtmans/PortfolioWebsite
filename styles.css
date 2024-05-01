@@ -1,0 +1,224 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: black;
+  color: #ededed;
+}
+
+/*Top row for navbar and logo*/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/*Text logo top left*/
+.logo{
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*Navbar top right*/
+.navbar a{
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: #3793d4;
+}
+
+/*Landing page text*/
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: url(Images/WarframeExcaliburHeader.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: skyblue;
+}
+
+.home-content p{
+  font-size: 16px;
+  margin: 20px 0 40px;
+  line-height: 1.2;
+}
+
+/*Explore & LO Shortcut buttons*/
+.home-content .btn-box{
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+/*Button animation :)*/
+.btn-box a{
+  position: relative;
+  width: 150px;
+  height: 100%;
+  background: #115586;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  display: inline-flex;
+  font-size: 19px;
+  color: #ededed;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-box a:nth-child(2){
+  background: transparent;
+  color: #ededed;
+}
+
+.btn-box a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background: #3793d4;
+  transition: 1s;
+}
+
+.btn-box a:hover::before{
+  width: 100%;
+}
+
+
+/*ABOUT ME SECTION*/
+
+
+/*learning outcomes clickable boxes*/
+.learningoutcomebutton {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+.lo {
+  display: block;
+  margin: 10px;
+  margin-right: 1000px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #115586;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-weight: 600;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  text-align: left;
+  border: 2px solid skyblue;
+}
+
+/*LO box hover color change*/
+.lo:hover {
+  background-color: skyblue;
+  border-color: white;
+  box-shadow: 0 0 10px white;
+  color: black; 
+}
+
+/*Footer, now with super awesome little icons*/  
+  .footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:skyblue;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+  
+  
